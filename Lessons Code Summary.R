@@ -310,3 +310,26 @@ ggplot(aes(x = "Yemen", y = "1970"), data = foreign_direct_investment_net_inflow
 
 t(foreign_direct_investment_net_inflows_percent_of_gdp)
 summary(log10(foreign_direct_investment_net_inflows_percent_of_gdp))
+summary(foreign_direct_investment_net_inflows_percent_of_gdp)
+
+qplot(x = country, 
+      data = foreign_direct_investment_net_inflows_percent_of_gdp, 
+      binwidth =0.01, 
+      geom = 'freqpoly')
+
+ggplot(aes(x = country), data = subset(foreign_direct_investment_net_inflows_percent_of_gdp))
+
+
+ggplot(aes(x = 1975), data = subset(foreign_direct_investment_net_inflows_percent_of_gdp)) +
+      geom_histogram(aes(facet_wrap(~country)
+                     
+library(ggplot2)
+gDat <- read.delim("gapminderDataFiveYear.tsv")
+str(gDat)                     
+ 
+getwd()                    
+summary(gapminderDataFiveYear.tsv)
+
+??gapminderDataFiveYear.tsv
+
+gapminderDataFiveYear.tsv[ROWS, COLUMNS]
